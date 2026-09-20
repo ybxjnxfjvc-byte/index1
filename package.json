@@ -1,0 +1,11 @@
+{
+  "name": "index1-sber-security-practice",
+  "private": true,
+  "scripts": {
+    "test:browser": "playwright test tests/playwright",
+    "test:security": "python scripts/security_check.py && python -m unittest discover -s tests/python -v"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
